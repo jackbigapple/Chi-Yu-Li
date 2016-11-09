@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi-Yu Li </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfVkOFCpB0JlbH9GmpvuOpnDLglUv0ZAc&callback=initMap"
+  type="text/javascript"></script>
+	<script src="js/jquery.1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+<body>
+<!--Header / load from common.html -->
+<div id="header"></div>
+
+<!--本頁內容開始////-->
+<div id="main-content" class="w3-container w3-content">
+	<div class="w3-row w3-padding-top">
+		<div class="w3-col m5 l5 w3-container w3-padding">
+		    <div class="w3-card-12">
+			    <img src="img/chiyu.jpg" alt="Chi-Yu Li" style="width:100%">
+			    <div class="w3-container w3-center">
+			    	<h1 class="w3-xxlarge">	Chi-Yu Li</h1>
+				    <p>Assistant Professor<br>
+					Department of Computer Science<br>
+					National Chiao Tung University<br>
+					Office: EC529 | Phone ext.: 54733 <br>
+					Email: chiyuli at cs.nctu.edu.tw<br>
+					Links: <a href="https://scholar.google.com.tw/citations?user=OtMUXigAAAAJ&amp;hl=en" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">[Google Scholar]</a>
+		                    <a href="https://nems-nctu.github.io/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">[NEMS LAB]</a></p>
+			    </div>
+			</div>
+		</div>
+		<div class="w3-col m7 l7 w3-container">
+						
+				<h2>Welcome!</h2>
+
+				<p>
+				I am an assistant professor in the Department of Computer Science at NCTU,
+				and leading the
+				<a href="https://nems-nctu.github.io/">NEtworking and Mobile Systems (NEMS)</a> laboratory in the department.
+				I received a PhD degree in Computer Science from UCLA, where I was a member of the WiNG group led by <a target="_blank" href="http://web.cs.ucla.edu/~slu/">Professor Songwu Lu</a>, in 2015.
+				Before that, I received an MS degree in Computer Science from NCTU in 2006,
+				and two Bechelor's degrees in Computer Science and Management Science from NCTU in 2004.
+				My research interests include
+				<strong>wireless networking</strong>,
+				<strong>mobile networks and systems</strong>, and
+				<strong>network security</strong>.
+				<br/>
+				Please download my CV <a target="_blank" href="pdf/cv_chiyu.pdf">here</a>.
+				</p>
+
+                <h2>What's New</h2>
+				<p>
+				<ul class="w3-ul">
+					<li><strong>Sep. 2016</strong> Our NEMS (NEtworking and Mobile Systems) Lab is launched.<br></li>
+		            <li><strong>Aug. 2016</strong> 4G SMS Security has been accepted by ACM CCS'16.<br></li>
+		            <li><strong>Dec. 2015</strong> VoLTE* has been accepted by ACM HotMobile'16.</p></li>
+				</ul>
+				
+		</div>
+		<div class="w3-col m12 l12 w3-container">
+			<h2>Recruiting</h2>
+			<p>I am looking for <strong>self-motivated</strong> students (including undergraduate, master, and phd)
+				who want to work on interesting problems in the areas of networking and mobile systems. My ongoing
+				research projects include but not limited to protocol desgins for WiFi networks,
+				security in mobile devices (Android) and networks (3G/4G), SDN (Software-defined networking). Please find the details below. The potential students are expected to be willing <strong>to learn</strong>, <strong>to explore</strong>, and <strong>to code</strong>. If you are interested in working with me, please schedule a meeting with me via email.
+				</p>
+		</div>
+	</div>
+</div>
+
+<!-- Footer-->
+<div id="footer">
+		<footer class="w3-light-gray w3-padding-top-16">
+		<div class="w3-content w3-container">
+		  <div class="w3-row w3-section">
+			<div class="w3-col m7 s12 w3-container">
+			  <!-- Add Google Maps -->
+			  <div id="googleMap" class="w3-round-large" style="width:100%;height:200px;"></div>
+			</div>
+			<div class="w3-col m5 s12 w3-container w3-section w3-medium">
+				<div class="w3-margin-bottom">
+					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 300新竹市東區大學路1001號<br>
+					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+				</div>
+			</div>
+			
+		  </div>
+		</div>
+		<div class="w3-container w3-blue w3-dark-gray w3-medium">
+			<div>© 2016 NEtworking and Mobile Systems Lab NCTU</div>
+		</div>
+	</footer>
+</div>
+<!-- Scripts -->
+<script src="js/common-Chi-Yu-Li.js"></script>
+<script type="text/javascript">
+//Google map
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 15,
+  scrollwheel: true,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+</html>

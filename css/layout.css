@@ -1,0 +1,30 @@
+#main-content h2 {
+	border-left: solid 6px #2196f3;
+	border-bottom: solid 1px #2196f3;
+	padding-left: 16px; 
+    color: #757574;
+}
+#main-content h3 {
+	/*border-left: solid 3px #cccccc;*/
+	border-bottom: solid 1px #aaaaaa; 
+    color: #757574;
+}
+#main-content ul.w3-ul li{
+	padding: 16px 2px 16px 16px;
+}
+#main-content a{
+	text-decoration: none;
+	color: #2196f3;
+}
+#main-content a:hover {
+	text-decoration: underline;
+	color: #2196f3;
+}
+
+#project-main-content h2 {
+	border-bottom: solid 1px #2196f3;
+    color: #2196f3;
+}
+header h1 a {
+	text-decoration: none;
+}
